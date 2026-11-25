@@ -29,7 +29,6 @@
       window.fileMergerConfig = {
         files: [
           { name: 'Web.data.br', parts: 3 },
-          { name: 'Web.framework.js.br', parts: 1 },
           { name: 'Web.wasm.br', parts: 3 },
         ],
         basePath: 'Build/',
@@ -71,7 +70,7 @@
     var config = {
       arguments: [],
       dataUrl: buildUrl + "/Web.data.br",
-      frameworkUrl: buildUrl + "/Web.framework.js.br",
+      frameworkUrl: buildUrl + "/Web.framework.js" /* ubg: the framework ships unsplit and uncompressed */,
       codeUrl: buildUrl + "/Web.wasm.br",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "BiznesBear",
